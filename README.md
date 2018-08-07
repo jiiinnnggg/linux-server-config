@@ -101,7 +101,7 @@ Restart Apache:
 sudo service apache2 restart
 ```
 
-### 2. Git, dependencies, and clone repository:
+## Git, dependencies, and clone repository:
 Run:
 ```sh
 $ sudo apt-get install git
@@ -131,7 +131,7 @@ since you're no longer running on localhost 5000.
 
 In addition, you'll need to recreate the ```[your_client_secrets].json``` file(s) in the folder since these are not stored on the git repository. You'll also need to modify any ```.py``` files that refer to these ```.json``` files to reflect the updated file path on the ubuntu server.
 
-### 3. Configure PostgresQL
+## Configure PostgresQL
 
 Install by running:
 ```sh
@@ -177,7 +177,7 @@ $ sudo load_db_samples.py
 ```
 to set up the database. To check if the sample data has been probably loaded into the right tables, you can go into `psql` and run the `SELECT * from [tablename]` queries in database `catalog`.
 
-### Google OAuth
+## Google OAuth
 
 Assuming the `.json` file(s) containing the client secrets have been properly added and file paths correctly referenced in the application files, we then need to add the URI for our application onto the Google Developers Console -> API Manager -> Credentials page under 'Authorized JavaScript origins' and 'Authorized redirect URIs'. For this, we'll use the `xip.io` appendix to our IP address, ie. http://35.174.159.105.xip.io/.
 
