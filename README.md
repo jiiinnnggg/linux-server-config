@@ -186,7 +186,9 @@ Reload Apache2 by restarting:
 $ sudo service apache2 restart
 ```
 
+Note: if your browser settings do not allow third party cookies to set, the log in might hang.
 
+Go to http://35.174.159.105.xip.io/ to test out the application served on your ubuntu instance.
 
 
 
