@@ -179,7 +179,7 @@ to set up the database. To check if the sample data has been probably loaded int
 
 ## Google OAuth
 
-Assuming the `.json` file(s) containing the client secrets have been properly added and file paths correctly referenced in the application files, we then need to add the URI for our application onto the Google Developers Console -> API Manager -> Credentials page under 'Authorized JavaScript origins' and 'Authorized redirect URIs'. For this, we'll use the `xip.io` appendix to our IP address, ie. http://35.174.159.105.xip.io/.
+Assuming the `.json` file(s) containing the client secrets have been properly added and file paths correctly referenced in the application files, we then need to add the URI for our application onto the Google Developers Console -> API Manager -> Credentials page under 'Authorized JavaScript origins' and 'Authorized redirect URIs'. For this, we'll use the `xip.io` appendix to our IP address, ie. http://35.174.159.105.xip.io/. (Note: OAuth login will not work for http://35.174.159.105 per Google OAuth DNS rules, although other functions of the application will work.)
 
 Reload Apache2 by restarting:
 ```sh
